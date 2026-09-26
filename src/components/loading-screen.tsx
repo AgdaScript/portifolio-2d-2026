@@ -39,7 +39,7 @@ export function LoadingScreen({ children }: LoadingScreenProps) {
   }
 
   return (
-    <div className="flex min-h-svh items-center justify-center bg-white">
+    <div className="flex min-h-svh items-center justify-center bg-[#faf5ed]">
       <div
         className="flex flex-col items-center gap-6"
         role="progressbar"
