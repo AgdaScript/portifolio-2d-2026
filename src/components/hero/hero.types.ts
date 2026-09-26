@@ -6,4 +6,5 @@ export type HeroMedia = {
 
 export type HeroProps = {
   media: HeroMedia;
+  loop: HeroMedia;
 };
