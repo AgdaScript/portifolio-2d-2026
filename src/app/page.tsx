@@ -7,12 +7,12 @@ export default function Home() {
       <main>
         <Hero
           media={{
-            src: "/videos/hero-agda.mp4",
+            src: "/videos/hero-agda.mp4?v=processed",
             width: 1920,
             height: 1080,
           }}
           loop={{
-            src: "/videos/typing1.mp4",
+            src: "/videos/typing1.mp4?v=processed",
             width: 1920,
             height: 1080,
           }}
