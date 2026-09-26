@@ -1,10 +1,17 @@
+import { Hero } from "@/components/hero";
 import { LoadingScreen } from "@/components/loading-screen";
 
 export default function Home() {
   return (
     <LoadingScreen>
-      <main className="flex min-h-svh items-center justify-center bg-white text-black">
-        <h1 className="text-4xl">Olá</h1>
+      <main>
+        <Hero
+          media={{
+            src: "/videos/hero-agda.mp4",
+            width: 1920,
+            height: 1080,
+          }}
+        />
       </main>
     </LoadingScreen>
   );
