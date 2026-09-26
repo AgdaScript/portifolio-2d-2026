@@ -4,7 +4,13 @@ export type HeroMedia = {
   height: number;
 };
 
+export type HeroTitleContent = {
+  name: string;
+  badge: string;
+};
+
 export type HeroProps = {
   media: HeroMedia;
   loop: HeroMedia;
+  title: HeroTitleContent;
 };

@@ -16,6 +16,10 @@ export default function Home() {
             width: 1920,
             height: 1080,
           }}
+          title={{
+            name: "Agda Lopes",
+            badge: "Engenheira Informática",
+          }}
         />
       </main>
     </LoadingScreen>

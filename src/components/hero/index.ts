@@ -1,2 +1,2 @@
 export { Hero } from "./hero";
-export type { HeroMedia, HeroProps } from "./hero.types";
+export type { HeroMedia, HeroProps, HeroTitleContent } from "./hero.types";
