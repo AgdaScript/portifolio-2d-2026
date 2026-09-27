@@ -5,7 +5,8 @@ import type { HeroMedia } from "./hero.types";
 
 let hasPlayedOnThisPageLoad = false;
 
-const videoClassName = "h-auto max-h-svh w-auto max-w-full";
+const videoClassName =
+  "h-auto w-full max-h-[58svh] max-w-full sm:max-h-[62svh] md:max-h-svh md:w-auto";
 
 type HeroVideoProps = {
   media: HeroMedia;
