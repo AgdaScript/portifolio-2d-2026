@@ -55,7 +55,7 @@ export function HeroVideo({ media, loop }: HeroVideoProps) {
   }, []);
 
   return (
-    <div className="relative aspect-[112/90] w-full overflow-hidden md:aspect-auto md:w-auto md:overflow-visible">
+    <div className="relative h-full w-full overflow-hidden md:h-auto md:w-auto md:overflow-visible">
       <video
         ref={introRef}
         src={media.src}

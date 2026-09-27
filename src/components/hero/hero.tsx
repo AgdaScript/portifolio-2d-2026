@@ -6,10 +6,12 @@ export function Hero({ media, loop, title }: HeroProps) {
   return (
     <section
       aria-label="Hero"
-      className="relative flex min-h-svh flex-col items-center justify-center gap-8 overflow-x-hidden bg-[#faf5ed] px-5 py-8 sm:gap-10 sm:px-8 sm:py-10 md:block md:overflow-visible md:px-0 md:py-0"
+      className="relative flex h-svh flex-col overflow-x-hidden bg-[#faf5ed] md:block md:h-auto md:min-h-svh md:overflow-visible"
     >
-      <HeroTitle title={title} />
-      <div className="flex w-screen items-center justify-center md:absolute md:inset-0 md:w-full">
+      <div className="flex h-1/2 w-full items-center justify-center md:contents">
+        <HeroTitle title={title} />
+      </div>
+      <div className="h-1/2 w-full md:absolute md:inset-0 md:flex md:h-auto md:w-full md:items-center md:justify-center">
         <HeroVideo media={media} loop={loop} />
       </div>
     </section>
