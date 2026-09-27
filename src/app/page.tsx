@@ -11,8 +11,7 @@ const menu = [
 
 export default function Home() {
   return (
-    <LoadingScreen>
-      <Header items={menu} />
+    <LoadingScreen header={<Header items={menu} />}>
       <main>
         <Hero
           media={{

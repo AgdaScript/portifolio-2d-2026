@@ -1,4 +1,5 @@
 import { NTR } from "next/font/google";
+import { HeaderIcon } from "./header-icon";
 import { HeaderNav } from "./header-nav";
 import type { HeaderProps } from "./header.types";
 
@@ -13,7 +14,10 @@ export function Header({ items }: HeaderProps) {
       <div
         className={`${ntr.className} pointer-events-auto rounded-full border border-[#eadfce] bg-[#f4efe9] px-4 py-2.5 shadow-[0_8px_24px_rgba(43,43,43,0.06)] sm:px-6 sm:py-3`}
       >
-        <HeaderNav items={items} />
+        <div className="flex items-center gap-2.5 sm:gap-3">
+          <HeaderIcon />
+          <HeaderNav items={items} />
+        </div>
       </div>
     </header>
   );
