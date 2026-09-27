@@ -6,7 +6,7 @@ export function Hero({ media, loop, title }: HeroProps) {
   return (
     <section
       aria-label="Hero"
-      className="relative flex h-svh flex-col overflow-x-hidden bg-[#faf5ed] md:block md:h-auto md:min-h-svh md:overflow-visible"
+      className="relative flex h-svh flex-col overflow-x-hidden bg-[#fcf7f1] md:block md:h-auto md:min-h-svh md:overflow-visible"
     >
       <div className="flex h-1/2 w-full items-center justify-center md:contents">
         <HeroTitle title={title} />
