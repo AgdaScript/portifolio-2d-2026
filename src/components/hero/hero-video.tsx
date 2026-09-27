@@ -6,7 +6,7 @@ import type { HeroMedia } from "./hero.types";
 let hasPlayedOnThisPageLoad = false;
 
 const videoClassName =
-  "h-auto w-full max-h-[58svh] max-w-full sm:max-h-[62svh] md:max-h-svh md:w-auto";
+  "absolute top-0 right-0 h-full w-[calc(100%/0.7)] max-w-none object-cover object-right md:static md:h-auto md:w-auto md:max-h-svh md:max-w-full md:object-contain md:object-center";
 
 type HeroVideoProps = {
   media: HeroMedia;
@@ -55,7 +55,7 @@ export function HeroVideo({ media, loop }: HeroVideoProps) {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative aspect-[112/90] w-full overflow-hidden md:aspect-auto md:w-auto md:overflow-visible">
       <video
         ref={introRef}
         src={media.src}
@@ -79,7 +79,7 @@ export function HeroVideo({ media, loop }: HeroVideoProps) {
         loop
         aria-label="Vídeo de digitação"
         aria-hidden={!showLoop}
-        className={`absolute inset-0 h-full w-full object-contain ${showLoop ? "" : "invisible"}`}
+        className={`absolute top-0 right-0 h-full w-[calc(100%/0.7)] max-w-none object-cover object-right md:inset-0 md:w-full md:object-contain md:object-center ${showLoop ? "" : "invisible"}`}
       />
     </div>
   );
