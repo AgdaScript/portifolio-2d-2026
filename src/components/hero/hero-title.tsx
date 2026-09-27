@@ -27,7 +27,7 @@ export function HeroTitle({ title }: HeroTitleProps) {
           ))}
         </h1>
         <p
-          className={`${ntr.className} absolute right-0 bottom-0 origin-left translate-x-3 translate-y-[58%] -rotate-[8deg] bg-[#d5803a] px-3 py-1.5 text-[min(5vw,2.6svh)] tracking-[0.14em] whitespace-nowrap text-white uppercase sm:translate-x-6 sm:text-[min(4vw,2.2svh)] md:translate-x-10 md:text-sm lg:translate-x-14 lg:text-[clamp(0.95rem,1.45vw,1.2rem)] xl:text-[clamp(1.05rem,1.3vw,1.35rem)] 2xl:text-[clamp(1.2rem,1.15vw,1.6rem)]`}
+          className={`${ntr.className} absolute right-0 bottom-0 origin-left translate-x-3 translate-y-[58%] -rotate-[14deg] bg-[#d5803a] px-2 py-1.5 text-[min(5vw,2.6svh)] tracking-[0.02em] whitespace-nowrap text-white uppercase sm:translate-x-6 sm:text-[min(4vw,2.2svh)] md:translate-x-10 md:text-sm lg:translate-x-14 lg:text-[clamp(0.95rem,1.45vw,1.2rem)] xl:text-[clamp(1.05rem,1.3vw,1.35rem)] 2xl:text-[clamp(1.2rem,1.15vw,1.6rem)]`}
         >
           {title.badge}
         </p>
